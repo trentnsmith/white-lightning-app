@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 import './DistilleriesPage.css';
 
-class Distilleries extends Component {
+class DistilleriesPage extends Component {
     render () {
         return (
-            <div>
-                Hello
+            <div className="distills">
+                <div className="distills_container">
+                    <h2>
+                    The Distilleries of Omaha
+                    </h2>
+                    <section>
+                        Distillery 1
+                    </section>
+                    <section>
+                        Distillery 2
+                    </section>
+                    <section>
+                        Distillery 3
+                    </section>
+                </div>
             </div>
         );
     };
 };
 
-export default Distilleries;
+export default DistilleriesPage;

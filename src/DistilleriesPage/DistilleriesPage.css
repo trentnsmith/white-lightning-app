@@ -1,0 +1,10 @@
+.distills {
+    display: flex;
+    flex-direction: column;
+}
+
+.distills_container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
