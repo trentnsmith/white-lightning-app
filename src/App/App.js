@@ -7,6 +7,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import DistilleriesPage from '../DistilleriesPage/DistilleriesPage';
 import AddSpirits from '../AddSpirits/AddSpirits';
 import ViewAllSpirits from '../ViewAllSpirits/ViewAllSpirits';
+import About from '../About/About';
 import './App.css';
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path='/distilleries' component={DistilleriesPage} />
             <Route path='/add-spirits' component={AddSpirits} />
             <Route path='/all-spirits' component={ViewAllSpirits} />
+            <Route path='/about-page' component={About} />
           </BrowserRouter>
           <Footer />
         </main>

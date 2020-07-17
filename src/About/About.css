@@ -1,9 +1,9 @@
-.view_spirits {
+.about {
     display: flex;
     flex-direction: column;
 }
 
-.spirit_menu {
+.about_wl {
     margin-top: 200px;
     display: flex;
     flex-direction: column;

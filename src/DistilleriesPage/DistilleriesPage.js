@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Distillery from '../Distillery/Distillery';
 import './DistilleriesPage.css';
 
 class DistilleriesPage extends Component {
@@ -10,13 +11,7 @@ class DistilleriesPage extends Component {
                     The Distilleries of Omaha
                     </h2>
                     <section>
-                        Distillery 1
-                    </section>
-                    <section>
-                        Distillery 2
-                    </section>
-                    <section>
-                        Distillery 3
+                        <Distillery />
                     </section>
                 </div>
             </div>

@@ -21,7 +21,7 @@ class LandingPage extends Component {
                             Learn about the local whiskeys
                         </div>
                     </Link>
-                    <Link to='/add-spirits' className="box">
+                    <Link to='/about-page' className="box">
                         (graphic)
                         <div>
                             Why White Lightning?

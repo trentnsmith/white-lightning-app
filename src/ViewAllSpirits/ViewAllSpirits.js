@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import './ViewAllSpirits.css'
+import { Link } from 'react-router-dom';
+import Spirit from '../Spirit/Spirit';
+import './ViewAllSpirits.css';
 
 class ViewAllSpirits extends Component {
     render () {
         return (
             <div>
-                Testing Routes view ViewAllSpirits
+                <div className="view_spirits">
+                    <ul className="spirit_menu">
+                        <li>
+                        <Spirit />
+                        </li>
+                    </ul>
+                </div>
+                <Link to='/add-spirits'>
+                    Add a New Spirit
+                </Link>
             </div>
         );
     };
