@@ -8,14 +8,21 @@ class Distillery extends Component {
     render () {
         return (
             <div className="distillery">
-                <div>
-                    <h3>
-                        Distillery Here
-                    </h3>
-                    <div>
-                        Description
-                    </div>
-                </div>
+                {this.context.distills.map((distil) => {
+                    return(
+                        <div className="distillery_list">
+                            <h3>
+                                {distil.name}
+                            </h3>
+                            <h4>
+                                {distil.website}
+                            </h4>
+                            <p>
+                                {distil.description}
+                            </p>
+                        </div>
+                    )
+                })}
                 <Link to='/all-spirits'>
                     View all Spirits
                 </Link>
