@@ -1,0 +1,10 @@
+.add_spirits {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}

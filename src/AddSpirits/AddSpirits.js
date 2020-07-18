@@ -4,8 +4,11 @@ import './AddSpirits.css';
 class AddSpirits extends Component {
     render () {
         return (
-            <div>
-                testing
+            <div className="add_spirits">
+                <h2>Add a new spirit</h2>
+                <form className="form">
+
+                </form>
             </div>
         );
     };
