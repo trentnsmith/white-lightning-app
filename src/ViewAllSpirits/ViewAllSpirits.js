@@ -8,15 +8,17 @@ class ViewAllSpirits extends Component {
         return (
             <div>
                 <div className="view_spirits">
-                    <ul className="spirit_menu">
-                        <li>
+                    <div className="spirit_menu">
+                       
                         <Spirit />
-                        </li>
-                    </ul>
+                        
+                    </div>
                 </div>
-                <Link to='/add-spirits'>
+                <div className="add_spirit_div">
+                <Link to='/add-spirits' className="add_spirit_link">
                     Add a New Spirit
                 </Link>
+                </div>
             </div>
         );
     };
