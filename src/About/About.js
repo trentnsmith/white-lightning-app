@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.css';
-import Spirit from '../Spirit/Spirit';
 
 class About extends Component {
     render () {
