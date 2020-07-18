@@ -5,25 +5,35 @@ import './Spirit.css'
 class Spirit extends Component {
     static contextType = SpiritContext;
     render () {
+        let filteredSpirits = this.context.spirits;
+
         return (
-            <div className="spirit">
-                <h3 className="spirit_title">
-                    Spirit Title from (Name of Distillery)
-                </h3>
-                <div className="spirit_category">
-                    Category
-                </div>
-                <span className="spirit_age">
-                    Age
-                </span>
-                <span className="spirit_abv">
-                    ABV %
-                </span>
-                <div className="spirit_description">
-                    lorem ipsum balh asdkfjalsdfj;JDF SDFJASODFJ A SDKJF;ASDFAJF; F ASDFJALSDFASJDFASDFJASD FA SDF;ALSKDJFASIDJF
-                </div>
-                
-            </div>
+            <ul className="spirit">
+                {filteredSpirits.map((spirit) => {
+            
+            return(
+                <li>
+                    <h2>
+                    {spirit.name} - {spirit.category}
+                    </h2>
+                    <h3>
+                        {spirit.distillsId}
+                    </h3>
+                    <span>
+                        Aged: {spirit.age}
+                    </span>
+                    <span>
+                        ABV: {spirit.abv}
+                    </span>
+                    <p>
+                        {spirit.content}
+                    </p>
+                </li>
+               
+            )
+            })}
+
+            </ul>
         );
     };
 };
