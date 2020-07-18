@@ -8,13 +8,14 @@ import DistilleriesPage from '../DistilleriesPage/DistilleriesPage';
 import AddSpirits from '../AddSpirits/AddSpirits';
 import ViewAllSpirits from '../ViewAllSpirits/ViewAllSpirits';
 import About from '../About/About';
+import DATA from '../dummy-data';
 import './App.css';
 
 class App extends Component {
   //Setting State
   state = {
-    distills: [],
-    spirits: []
+    distills: DATA.distills,
+    spirits: DATA.spirits
   };
 
   render () {
