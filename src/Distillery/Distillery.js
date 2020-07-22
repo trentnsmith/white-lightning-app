@@ -12,7 +12,7 @@ class Distillery extends Component {
                     return(
                         <div className="distillery_list">
                             <h3>
-                                {distil.name}
+                                {distil.distillery_name}
                             </h3>
                             <h4>
                                 {distil.website}
