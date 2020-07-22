@@ -3,5 +3,6 @@
     position: fixed;
     border-bottom: black solid;
     width: 100%;
-
+    background-color: black;
+    color: white;
 }
