@@ -42,11 +42,18 @@ class App extends Component {
     });
   };
 
+  handleDeleteSpirit = (id) => {
+    this.setState({
+      spirits: this.state.spirits.filter(spirit => spirit.id !== id)
+    });
+  };
+
   render () {
     let value = {
       distills: this.state.distills,
       spirits: this.state.spirits,
-      addSpirit: this.handleAddSpirit
+      addSpirit: this.handleAddSpirit,
+      deleteSpirit: this.handleDeleteSpirit
     };
     return (
       <SpiritContext.Provider value={value}>
