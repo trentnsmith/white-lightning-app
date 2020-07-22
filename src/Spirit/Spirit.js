@@ -14,10 +14,10 @@ class Spirit extends Component {
             return(
                 <li>
                     <h2>
-                    {spirit.name} - {spirit.category}
+                    {spirit.spirit_name} - {spirit.category}
                     </h2>
                     <h3>
-                        {spirit.distillsId}
+                        {spirit.distillery_id}
                     </h3>
                     <span>
                         Aged: {spirit.age}
