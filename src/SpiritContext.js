@@ -1,9 +1,9 @@
 import React from 'react';
-import DATA from './dummy-data';
+//import DATA from './dummy-data';
 
 const SpiritContext = React.createContext({
-    distills: DATA.distills,
-    spirits: DATA.spirits
+    distills: [],
+    spirits: []
 });
 
 export default SpiritContext;
