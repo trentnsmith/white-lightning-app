@@ -8,20 +8,45 @@ import DistilleriesPage from '../DistilleriesPage/DistilleriesPage';
 import AddSpirits from '../AddSpirits/AddSpirits';
 import ViewAllSpirits from '../ViewAllSpirits/ViewAllSpirits';
 import About from '../About/About';
-import DATA from '../dummy-data';
+import config from '../config';
+//import DATA from '../dummy-data';
 import './App.css';
 
 class App extends Component {
   //Setting State
   state = {
-    distills: DATA.distills,
-    spirits: DATA.spirits
+    distills: [],
+    spirits: []
+  };
+
+  componentDidMount() {
+    fetch(`${config.API_ENDPOINT}/distilleries`)
+    .then((resp) => {
+      return resp.json()
+    })
+    .then((distills) => {
+      this.setState({distills})
+    })
+    fetch(`${config.API_ENDPOINT}/spirits`)
+    .then((resp) => {
+      return resp.json()
+    })
+    .then((spirits) => {
+      this.setState({spirits})
+    })
+  };
+
+  handleAddSpirit = (newSpirit) => {
+    this.setState({
+      spirits: this.state.spirits.concat(newSpirit)
+    });
   };
 
   render () {
     let value = {
       distills: this.state.distills,
-      spirits: this.state.spirits
+      spirits: this.state.spirits,
+      addSpirit: this.handleAddSpirit
     };
     return (
       <SpiritContext.Provider value={value}>
