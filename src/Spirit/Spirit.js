@@ -7,8 +7,8 @@ class Spirit extends Component {
     static contextType = SpiritContext;
 
     handleDeleteSpirit = () => {
-        // this.context.deleteSpirit(this.props.id)
-        fetch(`${config.API_ENDPOINT}/spirits/${this.context.spirits.id}`, {
+        console.log('this.context', this.context)
+        fetch(`${config.API_ENDPOINT}/spirits/${this.context.spirits.spirit_id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' }
         })
@@ -17,7 +17,7 @@ class Spirit extends Component {
                 return res.json().then(event => Promise.reject(event))
         })
         .then(() => {
-            this.context.deleteSpirit(this.context.spirits.id)
+            this.context.deleteSpirit(this.context.spirits.spirit_id)
         })
         .catch(error => {
             alert(error.message)
