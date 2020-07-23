@@ -7,8 +7,8 @@ class Spirit extends Component {
     static contextType = SpiritContext;
 
     handleDeleteSpirit = () => {
-        console.log('this.context', this.context)
-        fetch(`${config.API_ENDPOINT}/spirits/${this.context.spirits.spirit_id}`, {
+        console.log('this.props', this.props)
+        fetch(`${config.API_ENDPOINT}/spirits/${this.props.id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' }
         })
@@ -17,7 +17,7 @@ class Spirit extends Component {
                 return res.json().then(event => Promise.reject(event))
         })
         .then(() => {
-            this.context.deleteSpirit(this.context.spirits.spirit_id)
+            this.context.deleteSpirit(this.props.id)
         })
         .catch(error => {
             alert(error.message)
@@ -25,38 +25,30 @@ class Spirit extends Component {
     };
 
     render () {
-        let filteredSpirits = this.context.spirits;
-
+        let { spirit_name, category, distillId, age, abv, content } = this.props;
         return (
-            <ul className="spirit">
-                {filteredSpirits.map((spirit) => {
-            
-            return(
-                <li>
+            <div className="spirit">
+                <div>
                     <h2>
-                    {spirit.spirit_name} - {spirit.category}
+                    {spirit_name} - {category}
                     </h2>
                     <h3>
-                        {spirit.distillery_id}
+                        {distillId}
                     </h3>
                     <span>
-                        Aged: {spirit.age}
+                        Aged: {age}
                     </span>
                     <span>
-                        ABV: {spirit.abv}
+                        ABV: {abv}
                     </span>
                     <p>
-                        {spirit.content}
+                        {content}
                     </p>
                     <button className="delete_spirit" onClick={this.handleDeleteSpirit}>
                         Remove this Spirit
                     </button>
-                </li>
-               
-            )
-            })}
-
-            </ul>
+                </div>
+            </div>
         );
     };
 };
