@@ -6,3 +6,27 @@
     background-color: black;
     color: white;
 }
+
+.menu {
+    list-style-type: none;   
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.h1_link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+@media screen and (max-width: 760px) {
+    .menu {
+        display: none;
+    }
+}
