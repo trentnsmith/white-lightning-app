@@ -58,8 +58,8 @@ class App extends Component {
     return (
       <SpiritContext.Provider value={value}>
         <main className="app">
-          <Nav />
           <BrowserRouter>
+            <Nav />
             <Route exact path='/' component={LandingPage} />
             <Route path='/distilleries' component={DistilleriesPage} />
             <Route path='/add-spirits' component={AddSpirits} />
