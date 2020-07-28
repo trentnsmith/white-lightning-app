@@ -32,7 +32,12 @@ class Nav extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to='add-spirits' className="menu_link">
+                        <Link to='/add-spirits' className="menu_link">
+                            Add Spirits
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/about-page' className="menu_link">
                             About
                         </Link>
                     </li>
