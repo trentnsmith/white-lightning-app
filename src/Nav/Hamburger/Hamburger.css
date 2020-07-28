@@ -2,31 +2,41 @@
     list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
+    padding-top: 20px;
 }
 
+.hamburger {
+    display: flex;
+    flex-direction: column;
+}
 .ham_link {
     text-decoration: none;
     color: white;
 }
 
 .main-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: green;
-    text-align: center;
     
+    background: black;
+    text-align: left; 
 }
 
-.main-navigation.open {
-    transform: translateX(0);
+.ham_menu_items {
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
+.ham_button {
+    width: 10%;
+    align-items: flex-end;
+    background: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 760px) {
-    .ham_menu {
+    .hamburger {
         display: none;
     }
     
