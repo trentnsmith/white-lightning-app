@@ -9,6 +9,11 @@
     flex-direction: column;
 }
 
+.background_container {
+    background: url("../Images/distillery1.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
 .box {
     border-radius: 5px;
     border: 2px solid black;
@@ -20,7 +25,15 @@
     align-items: center;
     text-align: center;
     display: block;
-  }
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+i {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
 
 @media only screen and (min-width: 760px) {
     .lp_container {
