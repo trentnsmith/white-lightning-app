@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Spirit from '../Spirit/Spirit';
 import SpiritContext from '../SpiritContext';
 import './ViewAllSpirits.css';
@@ -14,9 +13,7 @@ class ViewAllSpirits extends Component {
                 <ul className="spirit_menu">
                 {filteredSpirits.map((spirit) => {
                     return(
-                        
                             <li >
-                            
                                 <Spirit 
                                     spirit_name={spirit.spirit_name}
                                     id={spirit.id}
@@ -26,18 +23,10 @@ class ViewAllSpirits extends Component {
                                     age={spirit.age}
                                     abv={spirit.abv}
                                 />
-                                
                             </li>
-                        
                     )
                 })}
                 </ul>
-
-                <div className="add_spirit_div">
-                    <Link to='/add-spirits' className="add_spirit_link">
-                        Add a New Spirit
-                    </Link>
-                </div>
             </div>
         );
     };
