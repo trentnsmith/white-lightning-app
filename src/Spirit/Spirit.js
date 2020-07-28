@@ -44,7 +44,7 @@ class Spirit extends Component {
                     <p>
                         {content}
                     </p>
-                    <button className="delete_spirit" onClick={this.handleDeleteSpirit}>
+                    <button className="delete_spirit" onClick={() => {if (window.confirm('Are you sure you want to delete this item?')) this.handleDeleteSpirit() }}>
                         Remove this Spirit
                     </button>
                 </div>
