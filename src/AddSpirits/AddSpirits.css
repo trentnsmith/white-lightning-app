@@ -8,3 +8,32 @@
     display: flex;
     flex-direction: column;
 }
+
+.addspirit_form {
+    background: black;
+    color: white;
+}
+
+.section {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.distil_select {
+    background-color: black;
+    color: white;
+    margin-left: 15px;
+}
+
+.name_input, .category_input, .age_input, .abv_input {
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-left: 15px;
+}
+
+.content {
+    resize: none;
+}
