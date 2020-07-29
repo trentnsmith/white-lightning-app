@@ -10,7 +10,7 @@
 }
 
 .background_container {
-    background: url("../Images/distillery1.jpg") no-repeat fixed;
+    background: url("../Images/spirit1.jpg") no-repeat fixed;
     background-size: cover;
 }
 
@@ -30,6 +30,13 @@
     color: white;
 }
 
+.box:hover {
+    opacity: 0.9;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+
 i {
     font-size: xx-large;
     padding-bottom: 10px;
@@ -43,5 +50,6 @@ i {
 
     .box {
         width: 33.33%;
+        margin-bottom: 190px;
     }
 }

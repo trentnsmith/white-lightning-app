@@ -1,6 +1,8 @@
 .add_spirits {
     display: flex;
     flex-direction: column;
+    background: url('../Images/spirit3.jpg') no-repeat fixed;
+    background-size: cover;
 }
 
 .add_section {
@@ -12,7 +14,17 @@
 .addspirit_form {
     background: black;
     color: white;
+    align-self: center;
+    padding: 5px 5px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+    width: 90%;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
+
 
 .section {
     padding-bottom: 40px;
@@ -36,4 +48,77 @@
 
 .content {
     resize: none;
+}
+
+.form_submit {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.form_submit:hover {
+    background-color: white;
+    color: green;
+}
+
+.cancel_section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cancel_link {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 15px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 2px 2px;
+}
+
+.cancel_link:hover {
+    background-color: white;
+    color: red;
+}
+
+.distil_select {
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.distil_select:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: green;
+}
+
+@media only screen and (max-width: 440px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input, select {
+        width: 90%;
+    }
+    
+    .form_submit {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .addspirit_form {
+        width: 50%;
+        margin-left: 25px;
+    }
 }

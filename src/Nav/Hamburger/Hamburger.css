@@ -12,6 +12,11 @@
 .ham_link {
     text-decoration: none;
     color: white;
+    transition-duration: 0.4s;
+}
+
+.ham_link:hover {
+    color: green;
 }
 
 .main-navigation {
@@ -33,6 +38,11 @@
     border: none;
     text-decoration: none;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.ham_button:hover {
+    opacity: 0.4;
 }
 
 @media screen and (min-width: 760px) {

@@ -1,0 +1,22 @@
+.spirit {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.delete_spirit {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 15px;
+}
+
+.delete_spirit:hover {
+    background-color: white;
+    color: red;
+}

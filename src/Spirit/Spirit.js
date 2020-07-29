@@ -38,6 +38,7 @@ class Spirit extends Component {
                     <span>
                         Aged: {age}
                     </span>
+                    &nbsp; &nbsp; &nbsp;
                     <span>
                         ABV: {abv}
                     </span>

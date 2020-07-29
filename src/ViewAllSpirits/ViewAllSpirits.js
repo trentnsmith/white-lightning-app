@@ -13,7 +13,7 @@ class ViewAllSpirits extends Component {
                 <ul className="spirit_menu">
                 {filteredSpirits.map((spirit) => {
                     return(
-                            <li >
+                            <li className="spirit_li">
                                 <Spirit 
                                     spirit_name={spirit.spirit_name}
                                     id={spirit.id}

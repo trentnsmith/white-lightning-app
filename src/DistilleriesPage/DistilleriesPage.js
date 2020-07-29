@@ -7,7 +7,7 @@ class DistilleriesPage extends Component {
         return (
             <div className="distills">
                 <div className="distills_container">
-                    <h2>
+                    <h2 className="distil_h2">
                     The Distilleries of Omaha
                     </h2>
                     <section>

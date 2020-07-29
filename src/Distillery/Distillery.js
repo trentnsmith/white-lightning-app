@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import SpiritContext from '../SpiritContext';
 import './Distillery.css';
 
@@ -15,7 +14,9 @@ class Distillery extends Component {
                                 {distil.distillery_name}
                             </h3>
                             <h4>
+                                <a className="distil_web" href={`https://${distil.website}`} target="_blank">
                                 {distil.website}
+                                </a>
                             </h4>
                             <p>
                                 {distil.description}
@@ -23,9 +24,6 @@ class Distillery extends Component {
                         </div>
                     )
                 })}
-                <Link to='/all-spirits'>
-                    View all Spirits
-                </Link>
             </div>
         );
     };

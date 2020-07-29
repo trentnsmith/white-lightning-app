@@ -1,9 +1,32 @@
 .distillery_list {
-    border: solid black 2px;
+    border-radius: 7px;
     margin-bottom: 10px;
     align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
 }
 
 .distillery {
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.distil_web {
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.distil_web:hover {
+    color: green;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 760px) {
+    .distillery {
+        width: 70%;
+    }
 }
