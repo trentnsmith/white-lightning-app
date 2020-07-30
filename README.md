@@ -9,6 +9,8 @@ Link to live app: https://white-lightning-app.vercel.app/
 
 https://github.com/trentnsmith/white-lightning-app-server
 
+## Screenshots
+
 Landing Page. A user can click on anyone of the links to get started:
 
 ![image](https://user-images.githubusercontent.com/58092710/88878433-9b3ad580-d1ed-11ea-85b9-f9005a093ea1.png)
