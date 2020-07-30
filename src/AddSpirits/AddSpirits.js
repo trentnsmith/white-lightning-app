@@ -175,7 +175,7 @@ class AddSpirits extends Component {
         return (
             <div className="add_spirits">
                 <section className="add_section">
-                    <h2>Add a new spirit</h2>
+                    <h2 className="addform_h2">Add a new spirit</h2>
                     <form className="addspirit_form" onSubmit={this.handleFormSubmit}>
                         <div className="section">
                             <label className="name_label">
