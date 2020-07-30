@@ -8,7 +8,6 @@ class ViewAllSpirits extends Component {
 
     render () {
         let filteredSpirits = this.context.spirits;
-        console.log(filteredSpirits)
         return (
             <div className="view_spirits">
                 <ul className="spirit_menu">
