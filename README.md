@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# White Lightning
 
-## Available Scripts
+This app is great for those who enjoy tasting whiskey, vodka, or gin! White Lightning offers the ability to read a little about the local distilleries of Omaha, NE.
+A user can view of all the great spirits offered at these distilleries, and if a new spirit is created, the user could add it to the database. This is app is useful for anyone wanting to know what the local distilleries in Omaha, NE have to offer or spriits. 
 
-In the project directory, you can run:
+Link to live app: https://white-lightning-app.vercel.app/
 
-### `npm start`
+## API Documentation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://github.com/trentnsmith/white-lightning-app-server
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Landing Page. A user can click on anyone of the links to get started:
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/58092710/88878433-9b3ad580-d1ed-11ea-85b9-f9005a093ea1.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Distillery Page. A user can read a little about the distilleries in the local area, and click a link to check out the website:
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/58092710/88878472-af7ed280-d1ed-11ea-969d-bc0ec3b1e5a8.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Spirits Page. A user can read a little about all of the types of spirits the the distilleries have to offer. A user can also delete an item if they choose:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/58092710/88878496-bb6a9480-d1ed-11ea-9372-5635d4bdec2b.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Add Spirits Page. A user can add a new spirit to the database:
 
-### `npm run eject`
+![image](https://user-images.githubusercontent.com/58092710/88878524-c8878380-d1ed-11ea-8180-053a33b33493.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+About Page. A user can read a little about the history of distilling in Omaha, NE and where the term "White Lightning" comes from:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/58092710/88878559-d76e3600-d1ed-11ea-870b-8177ab50cdbe.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technology Used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Front End
 
-## Learn More
+React
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Create React App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React Router
 
-### Code Splitting
+HTML5
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+CSS3 (scratch - no frameworks)
 
-### Analyzing the Bundle Size
+Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Jest (screen captures & smoke tests)
 
-### Making a Progressive Web App
+Production
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Deployed via Zeit
