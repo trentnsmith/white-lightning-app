@@ -106,7 +106,7 @@ class AddSpirits extends Component {
             })
             .then((savedSpirit) => {
                 this.context.addSpirit(savedSpirit)
-                this.props.history.push('/all-spirits')
+                this.props.history.push('/')
             })
             .catch((error) => {
                 console.log(error)

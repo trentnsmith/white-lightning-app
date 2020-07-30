@@ -8,6 +8,7 @@ class ViewAllSpirits extends Component {
 
     render () {
         let filteredSpirits = this.context.spirits;
+        console.log(filteredSpirits)
         return (
             <div className="view_spirits">
                 <ul className="spirit_menu">
@@ -17,7 +18,7 @@ class ViewAllSpirits extends Component {
                                 <Spirit 
                                     spirit_name={spirit.spirit_name}
                                     id={spirit.id}
-                                    distillId={spirit.distillery_id}
+                                    distillId={spirit.distillery_name}
                                     category={spirit.category}
                                     content={spirit.content}
                                     age={spirit.age}
